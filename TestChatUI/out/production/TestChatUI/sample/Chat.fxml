@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+
+<AnchorPane prefHeight="712.0" prefWidth="391.0" style="-fx-background-color: transparent;" stylesheets="@login_css.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="parent" alignment="TOP_CENTER" prefHeight="616.0" prefWidth="40.0" style="-fx-background-color: #17212B; -fx-background-radius: 34; -fx-border-width: 0;" AnchorPane.bottomAnchor="47.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Ellipse fx:id="topMenu" fill="#0d13178c" layoutX="20.0" layoutY="21.0" onMouseClicked="#topMenu" radiusX="20.0" radiusY="20.0" stroke="#0d1317" strokeType="INSIDE" />
+                  <FontAwesomeIcon fx:id="star" iconName="STAR" layoutX="9.0" layoutY="30.0" onMouseClicked="#topMenu" size="2em" text="" AnchorPane.topAnchor="9.428571701049805">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxWidth="-Infinity" prefHeight="398.0" prefWidth="40.0" styleClass="scrollPane" stylesheets="@css.css" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+               <content>
+                  <FlowPane fx:id="flow" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="40.0" />
+               </content>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ScrollPane>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="40.0">
+               <children>
+                  <Ellipse fx:id="botMenu" fill="#0d13178c" layoutX="20.0" layoutY="20.0" onMouseClicked="#botMenu" radiusX="20.0" radiusY="15.0" stroke="#0d1317" strokeType="INSIDE" AnchorPane.bottomAnchor="1.0" />
+                  <FontAwesomeIcon iconName="SQUARE_ALT" layoutX="11.0" layoutY="26.0" onMouseClicked="#botMenu" size="2em">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon iconName="ELLIPSIS_H" layoutX="15.0" layoutY="17.0" onMouseClicked="#botMenu" text="">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <HBox fx:id="topBox" disable="true" layoutX="11.0" layoutY="15.0" style="-fx-background-color: #17212B; -fx-background-radius: 32;" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="40.0" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <children>
+                  <Circle fill="#10181e" layoutX="20.0" layoutY="20.0" onMouseClicked="#searchUser" radius="20.0" stroke="#0d1317f0" strokeType="INSIDE" />
+                  <FontAwesomeIcon iconName="SEARCH" layoutX="9.0" layoutY="28.0" onMouseClicked="#searchUser" size="2em">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="40.0" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <children>
+                  <Circle fill="#10181e" layoutX="20.0" layoutY="20.0" onMouseClicked="#settings" radius="20.0" stroke="#0d1317" strokeType="INSIDE" />
+                  <FontAwesomeIcon iconName="COG" layoutX="10.0" layoutY="29.0" onMouseClicked="#settings" size="2em">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="40.0" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <children>
+                  <Circle fill="#10181e" layoutX="20.0" layoutY="20.0" onMouseClicked="#createGroupChat" radius="20.0" stroke="#0d1317" strokeType="INSIDE" />
+                  <FontAwesomeIcon iconName="USERS" layoutX="8.0" layoutY="29.0" onMouseClicked="#createGroupChat" size="2em">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox fx:id="botBox" disable="true" layoutX="21.0" layoutY="25.0" style="-fx-background-color: #17212B; -fx-background-radius: 32;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="40.0" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <children>
+                  <Circle fill="#10181e" layoutX="20.0" layoutY="20.0" onMouseClicked="#quitApp" radius="20.0" stroke="#0d1317f0" strokeType="INSIDE" />
+                  <FontAwesomeIcon iconName="POWER_OFF" layoutX="10.0" layoutY="29.0" onMouseClicked="#quitApp" size="2em">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="40.0" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <children>
+                  <Circle fill="#10181e" layoutX="20.0" layoutY="20.0" onMouseClicked="#minimizeApp" radius="20.0" stroke="#0d1317" strokeType="INSIDE" />
+                  <FontAwesomeIcon iconName="MINUS" layoutX="12.0" layoutY="36.0" onMouseClicked="#minimizeApp" size="1.8em">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="40.0" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <children>
+                  <Circle fill="#10181e" layoutX="20.0" layoutY="20.0" onMouseClicked="#question" radius="20.0" stroke="#0d1317" strokeType="INSIDE" />
+                  <FontAwesomeIcon iconName="QUESTION" layoutX="14.0" layoutY="28.0" onMouseClicked="#question" size="2em">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#a12323" />
+                              <Stop color="#a12323" offset="0.007662835249042145" />
+                              <Stop color="#3a3abc" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="mainPane" layoutX="47.0" layoutY="47.0" prefHeight="618.0" prefWidth="353.0" style="-fx-background-color: #17212B; -fx-background-radius: 12;" visible="false" AnchorPane.bottomAnchor="47.0" AnchorPane.topAnchor="47.0" />
+   </children>
+</AnchorPane>

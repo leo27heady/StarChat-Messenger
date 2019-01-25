@@ -1,0 +1,55 @@
+.editPencilUserName {
+-fx-opacity: 0;
+ }
+.userNamePane:hover .editPencilUserName {
+-fx-opacity: 0.5;
+}
+.userNamePane:hover {
+    -fx-border-color:  rgba(215, 215, 215, 0.1);
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-border-style: solid;
+}
+
+.editPencilName {
+-fx-opacity: 0;
+ }
+.namePane:hover .editPencilName {
+-fx-opacity: 0.5;
+}
+.namePane:hover {
+    -fx-border-color:  rgba(215, 215, 215, 0.1);
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-border-style: solid;
+}
+
+.editPencilPassword {
+-fx-opacity: 0;
+ }
+.passwordPane:hover .editPencilPassword {
+-fx-opacity: 0.5;
+}
+.passwordPane:hover {
+    -fx-border-color:  rgba(215, 215, 215, 0.1);
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-border-style: solid;
+}
+
+.editPencilStatus {
+-fx-opacity: 0;
+ }
+.statusPane:hover .editPencilStatus {
+-fx-opacity: 0.5;
+}
+.statusPane:hover {
+    -fx-border-color:  rgba(215, 215, 215, 0.1);
+    -fx-border-opacity: 0.5;
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-border-style: solid;
+}
+
+.cameraIcon {
+-fx-opacity: 0;
+ }
+.circleImage:hover .cameraIcon {
+-fx-opacity: 0.5;
+}

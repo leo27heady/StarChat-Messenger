@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="618.0" prefWidth="353.0" style="-fx-background-color: #17212B; -fx-background-radius: 12;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" text="Create Group Chat" textFill="#753ec9">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="43.0" prefHeight="40.0" prefWidth="334.0" style="-fx-border-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <TextField fx:id="nameGroupField" prefHeight="30.0" prefWidth="150.0" promptText="Group Name..." style="-fx-background-color: transparent; -fx-text-fill: #7129d1; -fx-prompt-text-fill: rgba(113, 41, 209, 0.65);" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Label layoutX="127.0" layoutY="103.0" text="Add members" textFill="#7129d1">
+         <font>
+            <Font name="Ebrima Bold" size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="24.0" layoutY="136.0" prefHeight="425.0" prefWidth="307.0" styleClass="scrollPane" stylesheets="@group_css.css" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="scrollBox" prefHeight="0.0" prefWidth="299.0" />
+         </content>
+      </ScrollPane>
+      <JFXButton layoutX="142.0" layoutY="572.0" onMouseClicked="#createGroupButton" ripplerFill="#4e0ba3" style="-fx-background-color: #7128D0;" text="Create" textFill="#d7d7d7">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

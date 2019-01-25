@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane fx:id="stackBoxPane" layoutX="9.0" layoutY="9.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="contentPane" prefHeight="618.0" prefWidth="353.0" style="-fx-background-color: #17212B; -fx-background-radius: 12;">
+               <children>
+                  <ScrollPane fx:id="msgScroll" hbarPolicy="NEVER" layoutY="6.0" prefHeight="536.0" prefWidth="353.0" styleClass="scrollPane" stylesheets="@chat_css.css" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+                     <content>
+                        <VBox fx:id="msgBox" prefHeight="537.0" prefWidth="345.0" />
+                     </content>
+                  </ScrollPane>
+                  <AnchorPane fx:id="contactPanel" layoutX="40.0" layoutY="6.0" onMouseClicked="#contactPanelClicked" prefHeight="40.0" prefWidth="353.0" style="-fx-background-color: #121a22; -fx-background-radius: 12px 12px 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="contactName" layoutX="15.0" layoutY="1.0" prefHeight="22.0" prefWidth="190.0" text="Leonid Kulyk" textFill="#d7d7d7" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="116.0">
+                           <font>
+                              <Font name="Ebrima Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="addContactButton" focusTraversable="false" layoutX="244.0" layoutY="6.0" onMouseClicked="#addContactButton" style="-fx-background-color: #8720d7;" text="add" textFill="#fafafa" visible="false" AnchorPane.rightAnchor="64.0">
+                           <font>
+                              <Font name="Ebrima Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="blockContactButton" layoutX="305.0" layoutY="16.0" onMouseClicked="#blockContactButton" text="block" textFill="#8720d7" underline="true" visible="false" AnchorPane.rightAnchor="14.0">
+                           <font>
+                              <Font name="Ebrima" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="statusContactLabel" layoutX="15.0" layoutY="18.0" prefHeight="22.0" prefWidth="182.0" text="offline" textFill="#73797f" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="116.0">
+                           <font>
+                              <Font name="Ebrima Bold" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane fx:id="botPanel" layoutY="576.0" style="-fx-border-color: #7129d1; -fx-border-radius: 12;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <TextField fx:id="chatMsgField" layoutX="2.0" layoutY="5.0" onAction="#sendMsg" prefHeight="32.0" prefWidth="321.0" promptText="text message field" styleClass="msgTextField" stylesheets="@chat_css.css" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="30.0">
+                           <font>
+                              <Font name="Ebrima Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <FontAwesomeIcon fx:id="sendMsgIcon" iconName="CHEVRON_CIRCLE_RIGHT" layoutX="321.0" layoutY="30.65714454650879" size="2.3em" AnchorPane.rightAnchor="8.342855453491211">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#532aab" />
+                                    <Stop color="#ae3f4a" offset="0.9961685823754789" />
+                                    <Stop color="#ae3f4a" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </FontAwesomeIcon>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

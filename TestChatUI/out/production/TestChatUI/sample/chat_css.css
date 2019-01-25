@@ -1,0 +1,146 @@
+.scrollPane{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px;
+
+}
+.scrollPane >.viewport{
+    -fx-background-color: transparent;
+}
+
+.scrollPane .scroll-bar:vertical{
+    -fx-background-color:inherit;
+    -fx-pref-width: 5;
+}
+
+.scrollPane .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+
+}
+
+.scrollPane .scroll-bar:vertical .increment-button,
+.scrollPane .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0;
+
+}
+
+.scrollPane  .scroll-bar .increment-arrow,
+.scrollPane  .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+.scrollPane .scroll-bar:vertical .thumb {
+
+   -fx-background-color:#7128D0;
+   -fx-background-insets: 0, 0, 0;
+   -fx-opacity: 0.5;
+   -fx-background-radius: 5em;
+
+}
+.scrollPane .scroll-bar:vertical .thumb:pressed{
+
+    -fx-background-color:#7128D0;
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5em;
+
+}
+
+.scrollPane:hover .scroll-bar:vertical .thumb{
+
+    -fx-background-color:#7128D0;
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5em;
+
+}
+
+
+.msgTextField{
+    -fx-background-color: transparent;
+    -fx-text-fill: #7129d1;
+    -fx-prompt-text-fill: rgba(113, 41, 209, 0.65);
+}
+
+
+
+
+
+.message{
+    -fx-font-size: 14px;
+    -fx-font-weight: 300;
+}
+
+.txtName{
+    -fx-fill: black;
+    -fx-font-size: 11px;
+}
+
+.textFlowFlipped{
+    -fx-padding: 5 5 5 5;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-background-color: linear-gradient(to left, #4776e6, #8e54e9);
+    -fx-background-insets: -5 -5 -5 -5;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,-0.5,-0.5);
+}
+
+.textFlow{
+    -fx-padding: 5 5 5 5;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-background-color: linear-gradient(to right, #4B74E6, #e64b74);
+    -fx-background-insets: -5 -5 -5 -5;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,0.5,0.5);
+}
+
+.hbox{
+    -fx-background-insets: 5;
+    -fx-padding: 8px;
+}
+
+
+
+.statusPane:hover {
+    -fx-border-color:  rgba(215, 215, 215, 0.1);
+    -fx-border-opacity: 0.5;
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-border-style: solid;
+}
+
+.userNamePane:hover {
+    -fx-border-color:  rgba(215, 215, 215, 0.1);
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-border-style: solid;
+}
+
+.blockUser{
+
+    -fx-text-fill: #c61b1b;
+    -fx-opacity: 0.6;
+
+}
+
+.blockUser: hover{
+
+    -fx-text-fill: #c61b1b;
+    -fx-opacity: 1;
+
+}
+
+.closeUserInf{
+    -fx-fill: #643bcd;
+    -fx-opacity: 0.6;
+}
+
+.closeUserInf: hover{
+
+    -fx-fill: #643bcd;
+    -fx-opacity: 1;
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#userIconClicked" onMouseDragged="#userIconDragged" onMousePressed="#userIconPressed" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fx:id="imageCircle" fill="DODGERBLUE" layoutX="17.0" layoutY="20.0" radius="16.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" text="WQ" textFill="#d7d7d7">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="countMsgLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="14.0" style="-fx-background-color: #123456; -fx-background-radius: 12;" text="89" textFill="#d7d7d7" visible="false">
+         <font>
+            <Font name="Ebrima Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

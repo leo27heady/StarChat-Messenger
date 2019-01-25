@@ -1,0 +1,73 @@
+.scrollPane{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px;
+
+}
+.scrollPane >.viewport{
+    -fx-background-color: transparent;
+}
+
+.scrollPane .scroll-bar:vertical{
+    -fx-background-color:inherit;
+    -fx-pref-width: 5;
+}
+
+.scrollPane .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+
+}
+
+.scrollPane .scroll-bar:vertical .increment-button,
+.scrollPane .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0;
+
+}
+
+.scrollPane  .scroll-bar .increment-arrow,
+.scrollPane  .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+.scrollPane .scroll-bar:vertical .thumb {
+
+   -fx-background-color:#7128D0;
+   -fx-background-insets: 0, 0, 0;
+   -fx-opacity: 0.5;
+   -fx-background-radius: 5em;
+
+}
+.scrollPane .scroll-bar:vertical .thumb:pressed{
+
+    -fx-background-color:#7128D0;
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5em;
+
+}
+
+.scrollPane:hover .scroll-bar:vertical .thumb{
+
+    -fx-background-color:#7128D0;
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5em;
+
+}
+
+.hbox{
+    -fx-padding: 0px 0px 0px 10px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px 0px 1px 0px;
+
+}
+
+.hbox: hover{
+    -fx-background-color: transparent;
+    -fx-border-color:  rgba(215, 215, 215, 0.1);
+    -fx-border-width: 1px 0px 1px 0px;
+    -fx-border-style: solid;
+}

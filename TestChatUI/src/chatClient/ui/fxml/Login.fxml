@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="435.0" prefWidth="650.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+            <AnchorPane fx:id="parent" prefHeight="590.0" prefWidth="40.0" style="-fx-background-color: #17212B; -fx-background-radius: 34; -fx-border-width: 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Ellipse fx:id="starEllipse" fill="#10181e8c" layoutX="20.0" layoutY="23.0" radiusX="20.0" radiusY="20.0" stroke="#0d1317" strokeType="INSIDE" AnchorPane.topAnchor="1.0" />
+                  <FontAwesomeIcon fx:id="star" iconName="STAR" layoutX="10.0" layoutY="29.0" size="2em" text="" AnchorPane.topAnchor="8.428571701049805">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#a12323" />
+                        <Stop color="#a12323" offset="0.007662835249042145" />
+                        <Stop color="#3a3abc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></FontAwesomeIcon>
+                   <Ellipse fx:id="powerEllipse" fill="#10181e8c" layoutX="21.0" layoutY="567.0" radiusX="20.0" radiusY="15.0" stroke="#0d1317" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" />
+            <FontAwesomeIcon fx:id="power" iconName="POWER_OFF" layoutX="11.0" layoutY="429.0" size="2em">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#a12323" />
+                        <Stop color="#a12323" offset="0.007662835249042145" />
+                        <Stop color="#3a3abc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+      <Label fx:id="textLogin" contentDisplay="TOP" layoutX="-97.0" layoutY="401.0" prefHeight="45.0" prefWidth="234.0" rotate="-90.0" text="LOGIN" wrapText="true" AnchorPane.bottomAnchor="149.0">
+         <font>
+            <Font name="Ebrima Bold" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9857142857142858" endY="0.861904761904762">
+               <stops>
+                  <Stop color="#3227b2d9" />
+                  <Stop color="#b9236e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <StackPane fx:id="stackBoxPane" layoutX="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="mainPane" prefHeight="416.0" prefWidth="557.0" style="-fx-background-color: #17212B; -fx-background-radius: 12;" />
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>

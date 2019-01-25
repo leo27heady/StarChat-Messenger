@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="416.0" prefWidth="557.0" style="-fx-background-color: #17212B; -fx-background-radius: 12;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatClient.ui.controller.RegistrationPanel">
+   <children>
+      <Label layoutX="383.0" layoutY="14.0" text="Fill the form" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Impact" size="33.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8500ff" />
+                  <Stop color="#5d34c3" offset="0.01532567049808429" />
+                  <Stop color="#cc0c0c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="434.0" layoutY="49.0" text="and start chatting" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Ebrima Bold" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8500ff" />
+                  <Stop color="#5d34c3" offset="0.01532567049808429" />
+                  <Stop color="#cd0c0c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="106.0" prefHeight="40.0" prefWidth="143.0" style="-fx-border-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <FontAwesomeIcon iconName="USER" opacity="0.31" size="1.5em">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231052" />
+                        <Stop color="#9500ff" offset="0.034482758620689655" />
+                        <Stop color="RED" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <TextField fx:id="signNameField" prefHeight="30.0" prefWidth="150.0" promptText="Name" styleClass="textField" stylesheets="@../util/css/login_css.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="307.0" layoutY="106.0" prefHeight="40.0" prefWidth="143.0" style="-fx-border-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <FontAwesomeIcon iconName="USER" opacity="0.31" size="1.5em">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231052" />
+                        <Stop color="#9500ff" offset="0.034482758620689655" />
+                        <Stop color="RED" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <TextField fx:id="signSurnameField" prefHeight="30.0" prefWidth="150.0" promptText="Surname" styleClass="textField" stylesheets="@../util/css/login_css.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="160.0" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <FontAwesomeIcon iconName="AT" opacity="0.43" size="1.5em">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231052" />
+                        <Stop color="#9500ff" offset="0.034482758620689655" />
+                        <Stop color="RED" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <TextField fx:id="signLoginField" prefHeight="30.0" prefWidth="150.0" promptText="NickName" styleClass="textField" stylesheets="@../util/css/login_css.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="214.0" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <FontAwesomeIcon iconName="LOCK" opacity="0.31" size="1.5em">
+               <selectionFill>
+                  <LinearGradient endX="0.5190476190476191" endY="0.5">
+                     <stops>
+                        <Stop color="#3227b2d9" />
+                        <Stop color="#b9236e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </selectionFill>
+               <fill>
+                  <LinearGradient endX="0.5666666666666667" endY="0.6">
+                     <stops>
+                        <Stop color="#8500ff" />
+                        <Stop color="#5d34c3" offset="0.01532567049808429" />
+                        <Stop color="#cd0c0c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <PasswordField fx:id="signPasswordField" prefHeight="26.0" prefWidth="266.0" promptText="Password" styleClass="textField" stylesheets="@../util/css/login_css.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </PasswordField>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="269.0" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <FontAwesomeIcon iconName="KEY" opacity="0.31" rotate="90.0" size="1.5em">
+               <selectionFill>
+                  <LinearGradient endX="0.5190476190476191" endY="0.5">
+                     <stops>
+                        <Stop color="#3227b2d9" />
+                        <Stop color="#b9236e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </selectionFill>
+               <fill>
+                  <LinearGradient endX="0.5666666666666667" endY="0.6">
+                     <stops>
+                        <Stop color="#8500ff" />
+                        <Stop color="#5d34c3" offset="0.01532567049808429" />
+                        <Stop color="#cd0c0c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <PasswordField fx:id="signConfirmPasswordField" prefHeight="26.0" prefWidth="266.0" promptText="Confirm Password" styleClass="textField" stylesheets="@../util/css/login_css.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </PasswordField>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="228.0" layoutY="309.0" prefHeight="40.0" prefWidth="156.0">
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="rememberButton" text="Remember me" textFill="#10181e">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="checkRemember" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" size="8.0" toggleColor="#471394" toggleLineColor="#7129d1" unToggleColor="#2b3a4a" unToggleLineColor="#10181e" />
+         </children>
+      </HBox>
+      <JFXButton fx:id="regButton" buttonType="RAISED" layoutX="456.0" layoutY="375.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#regButton" prefHeight="42.0" prefWidth="130.0" style="-fx-background-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Register" textFill="#d7d7d7">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="gotoLogin" layoutX="272.0" layoutY="395.0" onMouseClicked="#openRegistration" opacity="0.6" styleClass="registerButton" stylesheets="@../util/css/login_css.css" text="Login">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2095238095238095">
+               <stops>
+                  <Stop color="#7425e1" />
+                  <Stop color="#d033bb" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

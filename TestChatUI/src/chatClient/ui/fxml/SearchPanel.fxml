@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="618.0" prefWidth="353.0" style="-fx-background-color: #17212B; -fx-background-radius: 12;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="160.0" layoutY="116.0" prefHeight="40.0" prefWidth="143.0" style="-fx-border-color: #7129d1; -fx-background-radius: 5px; -fx-border-radius: 5px;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <TextField fx:id="searchField" onAction="#searchField" prefHeight="30.0" prefWidth="150.0" promptText="Enter UserName or Name Group" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon iconName="SEARCH" size="1.5em">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231052" />
+                        <Stop color="#a12323" offset="0.038314176245210725" />
+                        <Stop color="#4040ab" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <HBox.margin>
+                  <Insets right="7.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <HBox fx:id="userPlace" alignment="CENTER_LEFT" layoutX="14.0" layoutY="62.0" prefHeight="55.0" prefWidth="325.0" spacing="10.0" style="-fx-border-color: #7129d1; -fx-border-width: 1.4; -fx-border-radius: 12;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="62.0">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <children>
+            <Label opacity="0.6" text="Place for found user" textFill="#7129d1">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <FontAwesomeIcon fill="#121a22" iconName="SEARCH" layoutX="37.0" layoutY="453.0" size="25em" />
+   </children>
+</AnchorPane>

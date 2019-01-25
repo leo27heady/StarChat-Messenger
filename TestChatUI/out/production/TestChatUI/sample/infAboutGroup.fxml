@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="475.0" prefWidth="300.0" style="-fx-background-color: #17212B;" stylesheets="@chat_css.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="contactImagePane" layoutX="14.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="120.0" styleClass="circleImage" stylesheets="@settings.css">
+         <children>
+            <Circle fx:id="contactImage" fill="#17212b" layoutX="60.0" layoutY="60.0" radius="60.0" stroke="#7129d1" strokeType="INSIDE" />
+            <Label fx:id="textInsteadOfImage" alignment="CENTER" prefHeight="120.0" prefWidth="120.0" styleClass="textInCircle" text="??" textFill="#d7d7d7">
+               <font>
+                  <Font name="Ebrima Bold" size="52.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="109.0" layoutY="10.0" text="Group Info" textFill="#d7d7d7" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Ebrima Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="134.0" layoutY="47.0" prefHeight="30.0" prefWidth="171.0" text="#topic" textFill="#d7d7d7">
+         <font>
+            <Font name="Ebrima Bold" size="17.0" />
+         </font>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="statusContactLabel" layoutX="134.0" layoutY="69.0" prefHeight="22.0" prefWidth="171.0" text="89 members" textFill="#643bcd">
+         <font>
+            <Font name="Ebrima Bold" size="11.0" />
+         </font>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </Label>
+      <FontAwesomeIcon fx:id="closeDialog" fill="#643bcd" iconName="CLOSE" layoutX="333.0" layoutY="19.0" size="1.3em" styleClass="closeUserInf" AnchorPane.rightAnchor="7.742856979370117" AnchorPane.topAnchor="5.628570556640625" />
+      <Label fx:id="leaveGroup" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="445.0" prefHeight="22.0" prefWidth="95.0" styleClass="blockUser" stylesheets="@chat_css.css" text="Leave Group" textFill="#c61b1b" AnchorPane.rightAnchor="105.0">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="4.0" layoutY="170.0" prefHeight="269.0" prefWidth="298.0" styleClass="scrollPane" stylesheets="@group_css.css" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="scrollBox" prefHeight="0.0" prefWidth="299.0" />
+         </content>
+      </ScrollPane>
+      <FontAwesomeIcon fx:id="addUsers" iconName="USER_PLUS" layoutX="270.0" layoutY="163.0" size="2em" styleClass="closeUserInf" text="" />
+      <Label fx:id="chooseLabel" disable="true" layoutX="142.0" layoutY="145.0" text="click again to save" textFill="#6b3b9e" visible="false">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
